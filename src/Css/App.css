@@ -1,0 +1,89 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.App .FormValidate {
+  background: url("../images/LoginBgblur.jpg") no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  min-height: 100vh;
+  align-items: center;
+}
+.App .FormValidate .flex {
+  display: flex;
+}
+.App .FormValidate .form {
+  margin: 40px 0;
+  box-shadow: 0 0 20px 5px rgba(242, 242, 242, 0.651);
+  padding: 20px;
+  -webkit-backdrop-filter: blur(20px);
+          backdrop-filter: blur(20px);
+}
+.App .FormValidate .form .mainStackInForm .selectImg {
+  position: relative;
+}
+.App .FormValidate .form .mainStackInForm .selectImg .DropDownShowImg .ShowImgText {
+  position: absolute;
+  right: -10px;
+  top: -20px;
+  color: white;
+  transition: all 0.3s ease;
+  background-color: rgb(153, 153, 153);
+  padding: 2px;
+  display: none;
+}
+.App .FormValidate .form .mainStackInForm .selectImg .DropDownShowImg .ShowImgText:hover {
+  transition: all 1s ease;
+  border-radius: 50px;
+  background-color: rgb(101, 101, 101);
+}
+.App .FormValidate .form .mainStackInForm .selectImg .DropDownShowImg:hover .ShowImgText {
+  display: flex;
+}
+.App .FormValidate .form .mainStackInForm .card input {
+  display: none;
+}
+.App .FormValidate .form .mainStackInForm .card .imgDiv {
+  position: relative;
+}
+.App .FormValidate .form .mainStackInForm .card .imgDiv img {
+  width: 300px;
+  height: 200px;
+  box-shadow: 0px 0px 10px 3px rgb(225, 225, 225);
+  transition: all 0.7s ease;
+}
+.App .FormValidate .form .mainStackInForm .card .imgDiv .ButtonCloseIcon {
+  position: absolute;
+  right: -10px;
+  top: -4px;
+  color: #8c0000;
+}
+.App .FormValidate .form .mainStackInForm .card .imgDiv .ButtonCloseIcon .closeIcon {
+  font-size: 2rem;
+  transition: all 0.7s ease;
+}
+.App .FormValidate .form .mainStackInForm .card .imgDiv .ButtonCloseIcon .closeIcon:hover {
+  transition: all 0.7s ease;
+  transform: scale(1.2);
+}
+.App .FormValidate .form .mainStackInForm .card label {
+  display: flex;
+}
+.App .FormValidate .form .mainStackInForm .loader {
+  display: flex;
+  justify-content: center;
+}
+.App .FormValidate .form .mainStackInForm .habits .CheckedIcon {
+  transition: all 0.5s ease;
+}
+.App .FormValidate .form .mainStackInForm .habits .CheckedIcon:hover {
+  transition: all 0.5s ease;
+  border: 1px solid;
+  transform: rotate(360deg);
+}
+.App .success {
+  display: flex;
+  color: green;
+}/*# sourceMappingURL=App.css.map */

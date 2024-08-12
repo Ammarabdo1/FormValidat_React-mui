@@ -1,0 +1,104 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.App {
+  .FormValidate {
+    background: url("../images/LoginBgblur.jpg") no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+    align-items: center;
+    .flex {
+      display: flex;
+    }
+    .form {
+      margin: 40px 0;
+      box-shadow: 0 0 20px 5px rgba(242, 242, 242, 0.651);
+      padding: 20px;
+      backdrop-filter: blur(20px);
+      .mainStackInForm {
+        .selectImg {
+          position: relative;
+
+          .DropDownShowImg {
+            .ShowImgText {
+              position: absolute;
+              right: -10px;
+              top: -20px;
+              color: white;
+              transition: all 0.3s ease;
+              background-color: rgb(153, 153, 153);
+              padding: 2px;
+              display: none;
+              &:hover {
+                transition: all 1s ease;
+                border-radius: 50px;
+                background-color: rgb(101, 101, 101);
+              }
+            }
+            &:hover {
+              .ShowImgText {
+                display: flex;
+              }
+            }
+          }
+        }
+        .card {
+          input {
+            display: none;
+          }
+          .imgDiv {
+            position: relative;
+            img {
+              width: 300px;
+              height: 200px;
+              box-shadow: 0px 0px 10px 3px rgb(225, 225, 225);
+              transition: all 0.7s ease;
+            }
+            .ButtonCloseIcon {
+              position: absolute;
+              right: -10px;
+              top: -4px;
+              color: #8c0000;
+              .closeIcon {
+                font-size: 2rem;
+                transition: all 0.7s ease;
+                &:hover {
+                  transition: all 0.7s ease;
+                  transform: scale(1.2);
+                }
+              }
+            }
+          }
+          label {
+            display: flex;
+          }
+        }
+        .loader {
+          display: flex;
+          justify-content: center;
+        }
+        .habits {
+          .CheckedIcon {
+            transition: all 0.5s ease;
+            &:hover {
+              transition: all 0.5s ease;
+              border: 1px solid;
+              transform: rotate(360deg);
+            }
+          }
+        }
+      }
+    }
+  }
+  .success {
+    display: flex;
+    color: green;
+  }
+  // .submit{
+  //     background: linear-gradient(to right, rgb(223, 223, 223), rgb(255, 243, 243));
+  // }
+}

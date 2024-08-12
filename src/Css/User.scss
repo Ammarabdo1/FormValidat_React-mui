@@ -1,0 +1,63 @@
+.userPage {
+  display: flex;
+  justify-content: center;
+  min-height: 100vh;
+  align-items: center;
+  background: no-repeat;
+  background-size: cover;
+  background-position: center;
+  .userInfo {
+    margin: 20px 0;
+    backdrop-filter: blur(10px);
+    padding: 30px;
+    border-radius: 10px;
+    img {
+      border-radius: 50%;
+      width: 350px;
+    }
+    h5 {
+      // color: rgb(173, 118, 46);
+      text-align: center;
+    }
+    .allHabits {
+      position: relative;
+      .dropDownToShowHabits {
+        .ShowHabitsText {
+          position: absolute;
+          left: 92px;
+          top: -30px;
+          color: white;
+          transition: all 0.3s ease;
+          background-color: rgb(153, 153, 153);
+          padding: 2px;
+          display: none;
+          &:hover {
+            transition: all 1s ease;
+            border-radius: 50px;
+            background-color: rgb(101, 101, 101);
+          }
+        }
+        &:hover {
+          .ShowHabitsText {
+            display: flex;
+          }
+        }
+      }
+    }
+    .habits {
+      display: flex;
+      width: fit-content;
+      box-shadow: 0px 0px 8px 2px rgba(218, 218, 218, 0.594);
+      padding: 3px 6px;
+      border-radius: 10px;
+    }
+    .singleHabit {
+      border-bottom: 2px solid rgb(119, 153, 217);
+      width: fit-content;
+      padding: 3px;
+      border-radius: 10px;
+      box-shadow: 0px 0px 8px 2px rgba(226, 226, 226, 0.594);
+    }
+  }
+  // text-align: center;
+}
